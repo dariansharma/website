@@ -1,11 +1,12 @@
 import React from "react";
-import { Projects } from "./Projects";
+//import { Projects } from "./Projects";
 
 export const Main = () => {
   return (
     <main>
-      <h2>Projects</h2>
-      <Projects />
+      <p>Welcome to my website</p>
+      <br></br>
+      <p>🏗 It is currently under construction👷</p>
     </main>
   );
 };

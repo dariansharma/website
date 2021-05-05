@@ -5,7 +5,7 @@ import "./Projects.css";
 
 export const Projects = () => {
   return (
-    <section>
+    <section className="projects">
       {projects.map((project) => {
         return <Project key={project.id} project={project} />;
       })}

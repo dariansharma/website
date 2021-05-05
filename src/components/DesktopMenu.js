@@ -5,8 +5,7 @@ export const DesktopMenu = () => {
     <nav>
       <ul>
         <li>Projects</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li>Resume</li>
       </ul>
     </nav>
   );

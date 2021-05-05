@@ -4,7 +4,7 @@ export const MobileMenu = () => {
   return (
     <nav>
       <ul>
-        <li>open</li>
+        <li>More</li>
       </ul>
     </nav>
   );
