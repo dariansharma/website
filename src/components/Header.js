@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { DesktopMenu } from "./DesktopMenu";
 import { MobileMenu } from "./MobileMenu";
 
-export const Header = () => {
+export const Header = ({ isProjects, setIsProjects }) => {
   const [size, setSize] = useState(window.innerWidth);
   const handleResize = () => {
     setSize(window.innerWidth);
@@ -15,7 +15,11 @@ export const Header = () => {
   return (
     <header>
       <h1>Darian Sharma</h1>
-      {size > 768 ? <DesktopMenu /> : <MobileMenu />}
+      {size > 768 ? (
+        <DesktopMenu isProjects={isProjects} setIsProjects={setIsProjects} />
+      ) : (
+        <MobileMenu />
+      )}
     </header>
   );
 };
