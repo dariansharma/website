@@ -1,9 +1,0 @@
-article {
-  background-color: antiquewhite;
-  margin: 1rem;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-}

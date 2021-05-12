@@ -1,8 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { DesktopMenu } from "./DesktopMenu";
 import { MobileMenu } from "./MobileMenu";
+import "./Header.css";
 
-export const Header = ({ isProjects, setIsProjects }) => {
+export const Header = ({
+  isProjects,
+  setIsProjects,
+  isResume,
+  setIsResume,
+}) => {
   const [size, setSize] = useState(window.innerWidth);
   const handleResize = () => {
     setSize(window.innerWidth);
@@ -14,9 +20,16 @@ export const Header = ({ isProjects, setIsProjects }) => {
 
   return (
     <header>
-      <h1>Darian Sharma</h1>
+      <a className="darian-sharma" href="http://localhost:3000">
+        Darian Sharma
+      </a>
       {size > 768 ? (
-        <DesktopMenu isProjects={isProjects} setIsProjects={setIsProjects} />
+        <DesktopMenu
+          isProjects={isProjects}
+          setIsProjects={setIsProjects}
+          isResume={isResume}
+          setIsResume={setIsResume}
+        />
       ) : (
         <MobileMenu />
       )}

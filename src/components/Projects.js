@@ -1,15 +1,16 @@
 import React from "react";
-import { Project } from "./Project";
-import { projects } from "./data";
 import "./Projects.css";
 
 export const Projects = () => {
   return (
     <section className="projects">
-      {/* {projects.map((project) => {
-        return <Project key={project.id} project={project} />;
-      })} */}
-      <p>I'm working on them ✍️</p>
+      <article>
+        <a href="https://todo-app-ce094.web.app">Firebase Todo App</a>
+        <p>
+          Learning basic React components, state, props, form input, form
+          handling, useState, useEffect, Google Firebase and Firestore Database.
+        </p>
+      </article>
     </section>
   );
 };

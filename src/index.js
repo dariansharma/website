@@ -7,11 +7,16 @@ import "./index.css";
 
 const App = () => {
   const [isProjects, setIsProjects] = useState(false);
-  console.log(isProjects);
+  const [isResume, setIsResume] = useState(false);
   return (
     <>
-      <Header isProjects={isProjects} setIsProjects={setIsProjects} />
-      <Main isProjects={isProjects} />
+      <Header
+        isProjects={isProjects}
+        setIsProjects={setIsProjects}
+        isResume={isResume}
+        setIsResume={setIsResume}
+      />
+      <Main isProjects={isProjects} isResume={isResume} />
       <Footer />
     </>
   );
