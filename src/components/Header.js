@@ -20,7 +20,7 @@ export const Header = ({
 
   return (
     <header>
-      <a className="darian-sharma" href="http://localhost:3000">
+      <a className="darian-sharma" href="https://dariansharma.netlify.app">
         Darian Sharma
       </a>
       {size > 768 ? (
