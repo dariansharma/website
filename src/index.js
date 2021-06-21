@@ -25,7 +25,7 @@ const App = () => {
       <section id="projects">
         <h1>Projects</h1>
         <article>
-          <a href="https://emojishop.netlify.app/#/"></a>
+          <a href="https://emojishop.netlify.app/#/">emoji shop</a>
           <p>Simple webstore made with React</p>
         </article>
       </section>
@@ -34,12 +34,17 @@ const App = () => {
         <a href="mailto:dariansharma@gmail.com">
           <p>dariansharma@gmail.com</p>
         </a>
-        <a href="https://github.com/dariansharma" target="_blank">
+        <a
+          href="https://github.com/dariansharma"
+          target="_blank"
+          rel="noreferrer"
+        >
           <p>github</p>
         </a>
         <a
           href="https://www.linkedin.com/in/darian-sharma-b2a658212/"
           target="_blank"
+          rel="noreferrer"
         >
           <p>linkedin</p>
         </a>
