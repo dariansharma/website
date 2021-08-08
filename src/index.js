@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import emojishop from "./emojishop.png";
 
 const App = () => {
   return (
@@ -24,15 +25,17 @@ const App = () => {
       </section>
       <section id="projects">
         <h1>Projects</h1>
-        <article>
-          <a href="https://emojishop.netlify.app/#/">emoji shop</a>
-          <p>Simple webstore made with React</p>
+        <article className="container-project-card">
+          <img src={emojishop} alt="Emoji Shop" />
+          <div className="container-project-links">
+            <a href="https://emojishop.netlify.app/#/">
+              <p>demo</p>
+            </a>
+            <a href="https://github.com/dariansharma/emojishop">
+              <p>github</p>
+            </a>
+          </div>
         </article>
-        <iframe
-          src="https://emojishop.netlify.app/#/"
-          frameborder="0"
-          title="emoji shop"
-        ></iframe>
       </section>
       <section id="contact">
         <h1>Contact</h1>
